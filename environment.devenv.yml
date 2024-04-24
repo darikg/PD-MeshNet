@@ -4,14 +4,15 @@ channels:
   - conda-forge
   - pytorch
   - nvidia
+  - pyg
 dependencies:
-  - pytorch=1.4.0
-  - numpy=1.18.1
+  - pytorch
+  - numpy
   - pytorch-cuda
-  - pytorch-scatter=1.4.0
-  - pytorch-sparse=0.4.3
-  - pytorch-cluster=1.4.5
-  - pytorch-spline-conv=1.1.1
+  - pytorch-scatter
+  - pytorch-sparse
+  - pytorch-cluster
+  - pytorch-spline-conv
   - tensorboard  # optional
   # - pymesh
   - pyyaml
