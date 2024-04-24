@@ -1,0 +1,32 @@
+name: pd_meshnet
+
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - pytorch=1.4.0
+  - numpy=1.18.1
+  - pytorch-cuda
+  - pytorch-scatter=1.4.0
+  - pytorch-sparse=0.4.3
+  - pytorch-cluster=1.4.5
+  - pytorch-spline-conv=1.1.1
+  - tensorboard  # optional
+  # - pymesh
+  - pyyaml
+
+
+environment:
+  THIRD_PARTY_ROOT: {{ root }}/third_party
+  PYG_ROOT: {{ root }}/third_party/pytorch_geometric
+
+#  CPATH:
+#    #     export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
+#    #    export CPATH=/usr/local/cuda-10.1/include:$CPATH
+#    - $CONDA_PREFIX/include           # [unix]
+#    - $CONDA_PREFIX/Library/include   # [win]
+
+#  LD_LIBRARY_PATH: $CONDA_PREFIX/lib  # [unix]
+# /usr/local/cuda-10.1/lib64
+
