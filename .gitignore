@@ -20,3 +20,5 @@ tensorboard/
 *.yml
 *.pkl
 *.pth
+
+!environment.devenv.yml
