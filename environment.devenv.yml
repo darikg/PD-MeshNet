@@ -15,9 +15,7 @@ dependencies:
   - pytorch-cluster
   - pytorch-spline-conv
   - tensorboard  # optional
-  # - pymesh
   - pyyaml
-
 
 environment:
   THIRD_PARTY_ROOT: {{ root }}/third_party
